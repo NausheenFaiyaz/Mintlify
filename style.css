@@ -745,7 +745,7 @@ h4 {
   vertical-align: middle;
 }
 
-.story-container> p {
+.story-container > p {
   text-transform: uppercase;
   color: var(--color-text-main);
   letter-spacing: 0.6px;
@@ -828,3 +828,96 @@ h4 {
   font-size: 11.375px;
   line-height: calc(var(--spacing) * 6);
 }
+
+.brand-logo-container {
+  padding-block: cal(var(--spacing) * 3);
+  overflow-x: clip;
+  overflow-y: clip;
+  min-width: calc(var(--spacing) * 0);
+  margin-inline: calc(var(--spacing) * -6);
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    black 0px,
+    black,
+    black cal(100% - 50px),
+    transparent 100%
+  );
+}
+
+.brand-logo-row {
+  position: relative;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.brand-logo-row .brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 12);
+  padding-inline: calc(var(--spacing) * 6);
+  min-width: 100%;
+  width: max-content;
+}
+
+.logo-btn {
+  display: flex;
+  height: calc(var(--spacing) * 16);
+  width: 140px;
+  flex-shrink: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  outline-style: none;
+  background-color: transparent;
+  font-size: 2rem;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  border: none;
+}
+
+.logo-btn[aria-selected="true"]{
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.logo-btn span {
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  border-width: 0;
+  white-space-collapse: collapse;
+  text-wrap-mode: nowrap;
+  clip-path: inset(50%);
+}
+
+.logo-btn svg {
+  border-radius: 0.25rem;
+  vertical-align: middle;
+}
+
+.logo-btn:nth-child(1) svg {
+  height: calc(var(--spacing) * 4);
+}
+
+.logo-btn:nth-child(2) svg {
+  height: calc(var(--spacing) * 5.5);
+}
+
+.logo-btn:nth-child(3) svg {
+  height: calc(var(--spacing) * 7);
+}
+
+.logo-btn:nth-child(4) svg {
+  height: calc(var(--spacing) * 6.5);
+}
+
+.logo-btn:nth-child(5) svg {
+  height: calc(var(--spacing) * 8);
+}
+
