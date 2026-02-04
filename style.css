@@ -1303,7 +1303,6 @@ h4 {
 }
 
 .card-text p {
-  color: var(--text-dark);
   line-height: 150%;
   margin-top: 0;
   font-size: 1rem;
@@ -1329,5 +1328,252 @@ h4 {
   width: calc(var(--spacing) * 2.5);
   height: calc(var(--spacing) * 2.5);
   user-select: none;
-  
+}
+
+.footer {
+  background-color: #08090a08;
+  border-top: 1px solid #08090a0d;
+  width: 100%;
+}
+
+.footer .footer-container {
+  border-inline-start-style: solid;
+  border-inline-end-style: solid;
+  border-left: 1px solid #08090a0d;
+  border-right: 1px solid #08090a0d;
+  overflow: hidden;
+  max-width: 1022px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container .footer-icons {
+  padding-bottom: calc(var(--spacing) * 6);
+  padding-top: calc(var(--spacing) * 16);
+  padding-inline: calc(var(--spacing) * 8);
+  border-bottom: 1px solid #08090a0d;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.footer-icons .social {
+  margin-left: auto;
+  gap: calc(var(--spacing) * 4);
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons .social a {
+  position: relative;
+}
+
+.footer-icons .social a svg {
+  color: #08090a80;
+  opacity: 0.7;
+}
+
+.footer-container .footer-links {
+  display: grid;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-inline: calc(var(--spacing) * 8);
+  padding-top: calc(var(--spacing) * 12);
+  padding-bottom: calc(var(--spacing) * 18);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.footer-container .footer-links div h3 {
+  text-transform: uppercase;
+  color: #08090a80;
+  letter-spacing: 0.65px;
+  font-weight: var(--font-weight-medium);
+  font-size: 13px;
+  line-height: 150%;
+  padding-block: calc(var(--spacing) * 1.5);
+  padding-inline: calc(var(--spacing) * 3);
+  margin-bottom: calc(var(--spacing) * 1);
+  text-wrap-mode: initial;
+  text-wrap-style: balance;
+}
+
+.footer-container .footer-links div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 1);
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+}
+
+.footer-container .footer-links div ul li a {
+  outline-offset: 2px;
+  white-space-collapse: collapse;
+  text-wrap-mode: nowrap;
+  font-weight: var(--font-weight-medium);
+  font-size: 0.875rem;
+  line-height: 150%;
+  padding-block: calc(var(--spacing) * 1.5);
+  padding-inline: calc(var(--spacing) * 3);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  gap: calc(var(--spacing) * 1.5);
+  display: inline-flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+.footer-container .security {
+  padding-block: calc(var(--spacing) * 6);
+  padding-inline: calc(var(--spacing) * 8);
+  border-top: 1px solid #08090a0d;
+  gap: calc(var(--spacing) * 6);
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .security .sec-para {
+  text-transform: capitalize;
+  font-weight: var(--font-weight-medium);
+  line-height: 150%;
+  font-size: 0.875rem;
+  text-align: center;
+  text-wrap-mode: initial;
+  text-wrap-style: pretty;
+}
+
+.footer-container .security .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 6);
+  user-select: none;
+}
+
+.footer-bottom {
+  padding-bottom: calc(var(--spacing) * 24);
+  padding-inline: calc(var(--spacing) * 8);
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  border-top: 1px solid #08090a0d;
+  padding-top: calc(var(--spacing) * 8);
+  flex-direction: row;
+}
+.footer-bottom .bottom-left {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.footer-bottom .bottom-left a {
+  display: inline-flex;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 1.5);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background-color: #08090a08;
+  padding-inline: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 1);
+  line-height: 150%;
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  white-space-collapse: collapse;
+  text-wrap-mode: nowrap;
+  color: var(--text-dark);
+  outline-offset: 2px;
+}
+
+.footer-bottom .bottom-left a svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+  color: var(--color-brand);
+  user-select: none;
+}
+
+.footer-bottom .bottom-center {
+  color: #08090a99;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.footer-bottom .bottom-right {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  justify-content: flex-end;
+}
+
+.footer-bottom .bottom-right .button-container {
+  padding: calc(var(--spacing) * 0.5);
+  background-color: #08090a08;
+  border-radius: var(--border-radius);
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
+  align-items: center;
+}
+.footer-bottom .bottom-right .button-container div {
+  position: absolute;
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+  border-radius: var(--border-radius);
+  background-color: var(--color-text-main);
+}
+
+.footer-bottom .bottom-right .button-container button {
+  display: flex;
+  z-index: 10;
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+  flex-shrink: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 1.5);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background-color: transparent;
+  padding: calc(var(--spacing) * 0);
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  white-space-collapse: collapse;
+  text-wrap-mode: nowrap;
+  color: var(--text-dark);
+  outline-offset: 2px;
+}
+
+.footer-bottom .bottom-right .button-container button svg {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+  color: var(--text-dark);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.footer-bottom .bottom-right .button-container button:nth-child(1) svg {
+  color: #08090a80;
+}
+
+.footer-bottom .bottom-right .button-container button:nth-child(2) svg {
+  color: #08090a80;
 }
